@@ -58,7 +58,8 @@
 
   <!-- PASSWORD SCREEN -->
   <div class="container" id="passwordScreen">
-    <h2>Enter the password</h2>
+    <h3> Question </h3>
+    <p>Enter the password</p>
     <input type="password" id="passwordInput" />
     <br>
     <button onclick="checkPassword()">Open</button>
@@ -68,6 +69,7 @@
   <div class="container hidden" id="envelopeScreen">
     <div class="envelope" onclick="showQuestion()">✉️</div>
     <div id="questionBox" class="hidden">
+       <h3> Question </h3>
       <p>Answer this to open it:</p>
       <input type="text" id="answerInput" />
       <br>
@@ -90,7 +92,7 @@
   </div>
 
   <script>
-    const PASSWORD = "yourpassword";
+    const PASSWORD = "hands";
     const ANSWER = "december 25";
 
     function checkPassword() {
