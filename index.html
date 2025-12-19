@@ -108,6 +108,8 @@
     }
 
     function checkAnswer() {
+          const ANSWER = "december 25";
+
       const input = document.getElementById("answerInput").value.toLowerCase();
       if (input === ANSWER.toLowerCase()) {
         document.getElementById("envelopeScreen").classList.add("hidden");
