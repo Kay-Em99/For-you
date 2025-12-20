@@ -58,8 +58,8 @@
 
   <!-- PASSWORD SCREEN -->
   <div class="container" id="passwordScreen">
-    <h3> Question </h3>
-    <p>Enter the password</p>
+    <h3> Date of our first kiss </h3>
+    <p>Enter the password (DD-MM-YYYY)</p>
     <input type="password" id="passwordInput" />
     <br>
     <button onclick="checkPassword()">Open</button>
@@ -69,8 +69,8 @@
   <div class="container hidden" id="envelopeScreen">
     <div class="envelope" onclick="showQuestion()">✉️</div>
     <div id="questionBox" class="hidden">
-       <h3> Question </h3>
-      <p>Answer this to open it:</p>
+       <h3> How do we say it, without saying it? </h3>
+      <p>Answer this to open :</p>
       <input type="text" id="answerInput" />
       <br>
       <button onclick="checkAnswer()">Unlock</button>
@@ -80,20 +80,27 @@
   <!-- LETTER -->
   <div class="container hidden" id="letterScreen">
     <div class="letter">
-      <p>Dear You,</p>
+      <p>Hi TJ,</p>
       <p>
-        This is where your letter will live. We’ll write it together.
+        It has been a tough road these past few days, I can surely say that in these past 3 years, we’ve come a long way. 
+        Twinkle, the past 3 years have just been the start, and for me, I am nothing but sure of spending the rest of my life with you. 
+        I know you’re angry, frustrated even, that I won’t understand what you’re trying to say sometimes and I’m sorry if I failed to mention how important you are to my life. 
+        Would you like to know a secret? I do want a future with you too….
       </p>
+      <p> 
+        Happy 3 years bubba.
+      I love you.
       <p>
-        Love,<br>
-        Me
+      <p>
+        XoXo,<br>
+        KM
       </p>
     </div>
   </div>
 
   <script>
-    const PASSWORD = "hands";
-    const ANSWER = "december 25";
+    const PASSWORD = "25-12-2022";
+    const ANSWER = "peace and fireworks";
 
     function checkPassword() {
       const input = document.getElementById("passwordInput").value;
@@ -101,7 +108,7 @@
         document.getElementById("passwordScreen").classList.add("hidden");
         document.getElementById("envelopeScreen").classList.remove("hidden");
       } else {
-        alert("Not quite. Try again.");
+        alert("Not quite. Hint: Code words");
       }
     }
 
@@ -110,7 +117,7 @@
     }
 
     function checkAnswer() {
-          const ANSWER = "december 25";
+          const ANSWER = "25-12-2022";
 
       const input = document.getElementById("answerInput").value.toLowerCase();
       if (input === ANSWER.toLowerCase()) {
