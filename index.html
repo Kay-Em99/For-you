@@ -117,14 +117,14 @@
     }
 
     function checkAnswer() {
-          const ANSWER = "25-12-2022";
+          const ANSWER = "peace and fireworks";
 
       const input = document.getElementById("answerInput").value.toLowerCase();
       if (input === ANSWER.toLowerCase()) {
         document.getElementById("envelopeScreen").classList.add("hidden");
         document.getElementById("letterScreen").classList.remove("hidden");
       } else {
-        alert("Think a little closer.");
+        alert("Not quite, hint: think code words.");
       }
     }
   </script>
